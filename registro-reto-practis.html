@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reto PRACTIS en Vivo · Jueves 9 de julio</title>
+<meta property="og:title" content="Reto PRACTIS en Vivo · Jueves 9 de julio, 7:00 PM">
+<meta property="og:description" content="Trae el reto #1 de tu negocio. Lo resolvemos en vivo, frente a todos. Sesión gratuita por Zoom.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#0D2B1F; --green2:#1A4030; --green3:#0a2018;
+  --gold:#C9A84C; --gold2:#E8C97A; --gold-dim:rgba(201,168,76,.32);
+  --cream:#FAFAF7; --cream2:#F2EFE6; --muted:rgba(242,239,230,.62);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Instrument Sans',sans-serif;
+  color:var(--cream);
+  background:
+    radial-gradient(1200px 600px at 50% -10%, rgba(201,168,76,.10), transparent 60%),
+    radial-gradient(900px 500px at 90% 110%, rgba(26,64,48,.55), transparent 60%),
+    linear-gradient(160deg,var(--green3) 0%,var(--green) 45%,var(--green3) 100%);
+  background-attachment:fixed;
+  min-height:100vh;
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.04;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.wrap{position:relative;z-index:1;max-width:680px;margin:0 auto;padding:44px 22px 70px}
+.fade{opacity:0;transform:translateY(16px);animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes rise{to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){.fade{animation:none;opacity:1;transform:none}}
+
+/* HEADER */
+.brand{display:flex;flex-direction:column;align-items:center;text-align:center;gap:13px;margin-bottom:30px}
+.emblem{width:68px;height:68px}
+.wordmark{font-family:'Cinzel',serif;font-weight:700;letter-spacing:.42em;font-size:22px;
+  background:linear-gradient(180deg,var(--gold2),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent;padding-left:.42em}
+.tagline{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);opacity:.85}
+.rule{width:54px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:2px auto}
+
+/* HERO */
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);text-align:center;margin-bottom:14px}
+h1{font-family:'Cinzel',serif;font-weight:600;font-size:clamp(28px,6.4vw,42px);line-height:1.12;text-align:center;color:var(--cream)}
+.sub{font-family:'Fraunces',serif;font-style:italic;font-size:clamp(16px,3.6vw,21px);color:var(--gold2);text-align:center;margin-top:12px;font-weight:400}
+
+/* DATE BLOCK */
+.when{display:flex;justify-content:center;gap:0;margin:28px auto 0;border:1px solid var(--gold-dim);border-radius:14px;overflow:hidden;max-width:480px}
+.when div{flex:1;text-align:center;padding:14px 8px;border-right:1px solid var(--gold-dim)}
+.when div:last-child{border-right:none}
+.when .k{font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
+.when .v{font-family:'Cinzel',serif;font-size:15px;font-weight:600;color:var(--cream)}
+
+.intro{margin:28px auto 0;max-width:560px;font-size:16px;color:rgba(250,250,247,.86);text-align:center}
+.intro b{color:var(--gold2);font-weight:600}
+
+/* SECTION LABEL */
+.seclabel{display:flex;align-items:center;gap:14px;margin:42px 0 20px}
+.seclabel span{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);white-space:nowrap}
+.seclabel::before,.seclabel::after{content:"";height:1px;flex:1;background:var(--gold-dim)}
+
+/* WHAT HAPPENS */
+.steps{display:flex;flex-direction:column;gap:12px}
+.step{display:flex;gap:14px;align-items:flex-start;background:rgba(255,255,255,.035);border:1px solid rgba(201,168,76,.18);border-radius:13px;padding:16px 16px}
+.step .n{font-family:'Cinzel',serif;font-weight:700;font-size:17px;color:var(--gold2);min-width:22px;line-height:1.4}
+.step p{font-size:14.5px;color:rgba(250,250,247,.86)}
+.step b{color:var(--gold2);font-weight:600}
+
+/* HOST */
+.host{margin-top:14px;background:rgba(255,255,255,.025);border:1px dashed var(--gold-dim);border-radius:13px;padding:18px;text-align:center}
+.host .k{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin-bottom:7px}
+.host p{font-size:14.5px;color:rgba(250,250,247,.82)}
+.host b{color:var(--cream)}
+
+/* FORM */
+.formcard{background:rgba(255,255,255,.04);border:1px solid rgba(201,168,76,.35);border-radius:16px;padding:24px 20px;box-shadow:0 18px 50px rgba(0,0,0,.28)}
+.field{margin-bottom:15px}
+label{display:block;font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:7px}
+input,textarea{
+  width:100%;background:rgba(13,43,31,.55);border:1px solid rgba(201,168,76,.3);border-radius:10px;
+  color:var(--cream);font-family:'Instrument Sans',sans-serif;font-size:15.5px;padding:13px 14px;outline:none;
+  transition:border-color .2s, box-shadow .2s
+}
+input:focus,textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,168,76,.15)}
+input::placeholder,textarea::placeholder{color:rgba(242,239,230,.35)}
+textarea{resize:vertical;min-height:88px}
+.hint{font-size:12.5px;color:var(--muted);margin-top:6px;font-style:italic;font-family:'Fraunces',serif}
+.btn{display:block;width:100%;text-align:center;font-family:'Cinzel',serif;font-weight:600;letter-spacing:.12em;
+  font-size:15px;color:#1a1206;background:linear-gradient(180deg,var(--gold2),var(--gold));
+  border:none;border-radius:11px;padding:16px;cursor:pointer;margin-top:6px;transition:transform .2s,opacity .2s,box-shadow .3s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(201,168,76,.3)}
+.btn:focus-visible{outline:3px solid var(--gold2);outline-offset:2px}
+.btn[disabled]{opacity:.45;cursor:wait;transform:none;box-shadow:none}
+.privacy{text-align:center;font-size:11.5px;color:rgba(242,239,230,.45);margin-top:12px}
+
+/* SUCCESS */
+.success{display:none;border:1px solid var(--gold);border-radius:16px;padding:30px 22px;text-align:center;
+  background:linear-gradient(180deg,rgba(201,168,76,.12),rgba(13,43,31,.4))}
+.success.show{display:block;animation:rise .6s ease forwards}
+.success h3{font-family:'Cinzel',serif;font-size:22px;color:var(--gold2);font-weight:600;margin-bottom:10px}
+.success p{font-size:15px;color:rgba(250,250,247,.86);max-width:440px;margin:0 auto 8px}
+.errormsg{display:none;text-align:center;font-size:13.5px;color:var(--gold2);margin-top:12px}
+.errormsg.show{display:block}
+
+.closing{font-family:'Fraunces',serif;font-style:italic;font-size:16px;color:var(--gold2);text-align:center;margin:44px auto 0;max-width:520px;line-height:1.6}
+.foot{text-align:center;margin-top:28px;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:rgba(242,239,230,.4)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="brand fade">
+<svg class="emblem" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<circle cx="50" cy="50" r="47" stroke="#C9A84C" stroke-width="1.2"/>
+<circle cx="50" cy="50" r="41" stroke="#C9A84C" stroke-width=".6" opacity=".55"/>
+<g stroke="#E8C97A" stroke-width="2.4" stroke-linecap="round">
+<line x1="38" y1="34" x2="38" y2="66"/>
+<line x1="46" y1="34" x2="46" y2="66"/>
+<line x1="54" y1="34" x2="54" y2="66"/>
+<line x1="62" y1="34" x2="62" y2="58" transform="rotate(18 62 46)"/>
+</g>
+<line x1="32" y1="34" x2="68" y2="34" stroke="#C9A84C" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="32" y1="66" x2="56" y2="66" stroke="#C9A84C" stroke-width="1.6" stroke-linecap="round"/>
+</svg>
+<div class="wordmark">PRACTIS</div>
+<div class="rule"></div>
+<div class="tagline">Tu práctica vive · Tú la diriges</div>
+</header>
+
+<div class="fade" style="animation-delay:.1s">
+<div class="eyebrow">Sesión en vivo · Sin costo · Cupo limitado</div>
+<h1>Reto PRACTIS en Vivo</h1>
+<div class="sub">Trae el reto #1 de tu negocio. Lo resolvemos frente a todos.</div>
+
+<div class="when" role="group" aria-label="Fecha y hora del evento">
+<div><div class="k">Día</div><div class="v">Jueves 9 · Jul</div></div>
+<div><div class="k">Hora</div><div class="v">7:00 PM</div></div>
+<div><div class="k">Dónde</div><div class="v">Zoom · CDMX</div></div>
+</div>
+
+<p class="intro">Esto no es un curso ni un webinar de venta de dos horas. Es una <b>sesión de asesoría real, en público</b>: tomo dos o tres retos de quienes se registren y los diagnostico en vivo, con preguntas directas y un plan concreto. Tú ves cómo se piensa un negocio desde adentro — aunque el caso no sea el tuyo.</p>
+</div>
+
+<div class="seclabel fade" style="animation-delay:.2s"><span>Qué va a pasar</span></div>
+<div class="steps fade" style="animation-delay:.25s">
+<div class="step"><div class="n">I</div><p><b>Te registras y escribes tu reto.</b> Los casos que se resuelven en vivo se eligen entre los registrados. Entre más claro lo escribas, más probable que sea el tuyo.</p></div>
+<div class="step"><div class="n">II</div><p><b>El jueves entramos a Zoom a las 7:00 PM.</b> Sin teoría, sin diapositivas eternas. Directo a los casos: diagnóstico, preguntas incómodas y el siguiente paso concreto.</p></div>
+<div class="step"><div class="n">III</div><p><b>Te llevas algo aplicable esa misma noche.</b> Un negocio se destraba con una buena decisión, no con más información.</p></div>
+</div>
+
+<div class="host fade" style="animation-delay:.3s">
+<div class="k">Quién dirige la sesión</div>
+<p><b>Ezequiel González Ruiz</b> · Más de 20 años asesorando negocios desde la banca y la consultoría (UNAM · ITAM · Harvard). Salió de su propia jaula de oro; hoy ayuda a profesionistas y dueños de negocio a salir de la suya.</p>
+</div>
+
+<div class="seclabel fade" style="animation-delay:.35s"><span>Aparta tu lugar</span></div>
+
+<form class="formcard fade" style="animation-delay:.4s" id="regform" name="registro-reto" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+<input type="hidden" name="form-name" value="registro-reto">
+<p style="display:none"><label>No llenar: <input name="bot-field"></label></p>
+
+<div class="field">
+<label for="nombre">Tu nombre</label>
+<input id="nombre" name="nombre" type="text" required autocomplete="name" placeholder="Nombre y apellido">
+</div>
+
+<div class="field">
+<label for="whatsapp">WhatsApp</label>
+<input id="whatsapp" name="whatsapp" type="tel" required autocomplete="tel" inputmode="tel" placeholder="55 0000 0000">
+<div class="hint">Por aquí te llega el acceso a Zoom y el recordatorio.</div>
+</div>
+
+<div class="field">
+<label for="email">Correo</label>
+<input id="email" name="email" type="email" required autocomplete="email" placeholder="tu@correo.com">
+</div>
+
+<div class="field">
+<label for="reto">¿Cuál es el reto #1 de tu negocio hoy?</label>
+<textarea id="reto" name="reto" required placeholder="Escríbelo como se lo contarías a un asesor de confianza. Dos o tres líneas bastan."></textarea>
+<div class="hint">Los casos de la sesión se eligen de estas respuestas.</div>
+</div>
+
+<button class="btn" type="submit" id="submitbtn">Apartar mi lugar</button>
+<div class="errormsg" id="errormsg">No se pudo enviar. Revisa tu conexión e inténtalo de nuevo.</div>
+<p class="privacy">Tus datos solo se usan para darte acceso a la sesión. Nada de spam.</p>
+</form>
+
+<div class="success" id="success" role="status">
+<h3>Tu lugar está apartado</h3>
+<p><b style="color:var(--gold2)">Jueves 9 de julio · 7:00 PM (CDMX) · Zoom.</b></p>
+<p>En las próximas horas te llega la confirmación por WhatsApp y correo con el acceso. Agenda la hora desde ahora: los casos se resuelven en vivo y no se comparte la grabación completa.</p>
+</div>
+
+<p class="closing fade">“Yo ya salí de una jaula… ahora me dedico a ayudar a otros a salir de la suya.”</p>
+<div class="foot">PRACTIS · No te quita tiempo, te lo devuelve</div>
+</div>
+
+<script>
+const form = document.getElementById('regform');
+const btn = document.getElementById('submitbtn');
+const err = document.getElementById('errormsg');
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  err.classList.remove('show');
+  btn.disabled = true;
+  btn.textContent = 'Enviando…';
+  const data = new FormData(form);
+  try {
+    const res = await fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(data).toString()
+    });
+    if (!res.ok) throw new Error('network');
+    form.style.display = 'none';
+    const ok = document.getElementById('success');
+    ok.classList.add('show');
+    ok.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  } catch (_) {
+    err.classList.add('show');
+    btn.disabled = false;
+    btn.textContent = 'Apartar mi lugar';
+  }
+});
+</script>
+</body>
+</html>
