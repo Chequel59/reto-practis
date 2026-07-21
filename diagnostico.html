@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La radiografía de tu negocio · PRACTIS</title>
+<meta property="og:title" content="La radiografía de tu negocio en 3 minutos">
+<meta property="og:description" content="5 números y descubres las 5 palancas de crecimiento de tu negocio. Estimación educativa gratuita.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400;1,9..144,500&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#0D2B1F; --green2:#1A4030; --green3:#0a2018;
+  --gold:#C9A84C; --gold2:#E8C97A; --gold-dim:rgba(201,168,76,.32);
+  --cream:#FAFAF7; --muted:rgba(242,239,230,.60);
+  --red:#E0805A; --amber:#E0B14A; --ok:#9FD0A8;
+  --display:'Cinzel',serif;
+  --accent:'Fraunces',serif;
+  --sans:'Instrument Sans',system-ui,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:var(--sans);color:var(--cream);line-height:1.55;-webkit-font-smoothing:antialiased;
+  background:
+    radial-gradient(1200px 600px at 50% -10%, rgba(201,168,76,.10), transparent 60%),
+    radial-gradient(900px 500px at 90% 110%, rgba(26,64,48,.55), transparent 60%),
+    linear-gradient(160deg,var(--green3) 0%,var(--green) 45%,var(--green3) 100%);
+  background-attachment:fixed;min-height:100vh;
+}
+.wrap{max-width:660px;margin:0 auto;padding:38px 20px 76px}
+.brand{text-align:center;margin-bottom:24px}
+.wordmark{font-family:var(--display);font-weight:700;letter-spacing:.4em;font-size:20px;
+  background:linear-gradient(180deg,var(--gold2),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent;padding-left:.4em}
+.tagline{font-family:var(--mono);font-size:9.5px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);opacity:.85;margin-top:8px}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);text-align:center;margin-bottom:14px}
+h1{font-family:var(--display);font-weight:600;font-size:clamp(26px,6vw,38px);line-height:1.12;text-align:center;text-wrap:balance}
+.sub{font-family:var(--accent);font-style:italic;font-size:clamp(15px,3.4vw,19px);color:var(--gold2);text-align:center;margin:14px auto 0;max-width:520px;font-weight:400}
+
+.card{background:rgba(255,255,255,.04);border:1px solid rgba(201,168,76,.30);border-radius:16px;padding:24px 20px;margin-top:28px;box-shadow:0 18px 50px rgba(0,0,0,.28)}
+.field{margin-bottom:17px}
+label{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.lblhint{display:block;color:var(--muted);text-transform:none;letter-spacing:0;font-family:var(--accent);font-style:italic;font-size:12.5px;margin-top:3px;font-weight:400}
+.inputwrap{position:relative;margin-top:8px}
+.inputwrap .pfx,.inputwrap .sfx{position:absolute;top:50%;transform:translateY(-50%);color:var(--muted);font-size:15.5px;pointer-events:none}
+.inputwrap .pfx{left:14px} .inputwrap .sfx{right:14px}
+input,select{width:100%;background:rgba(13,43,31,.55);border:1px solid rgba(201,168,76,.3);border-radius:10px;
+  color:var(--cream);font-family:var(--sans);font-size:16px;padding:13px 14px;outline:none;transition:border-color .2s,box-shadow .2s;font-variant-numeric:tabular-nums;appearance:none}
+select{cursor:pointer} option{background:var(--green);color:var(--cream)}
+input.money{padding-left:28px} input.pct{padding-right:34px}
+input:focus,select:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,168,76,.15)}
+input::placeholder{color:rgba(242,239,230,.32)}
+.btn{display:block;width:100%;text-align:center;font-family:var(--display);font-weight:600;letter-spacing:.08em;
+  font-size:15px;color:#1a1206;background:linear-gradient(180deg,var(--gold2),var(--gold));
+  border:none;border-radius:11px;padding:16px;cursor:pointer;margin-top:8px;transition:transform .2s,box-shadow .3s;text-decoration:none}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 34px rgba(201,168,76,.3)}
+.btn:focus-visible{outline:3px solid var(--gold2);outline-offset:2px}
+.err{color:var(--red);font-size:13px;text-align:center;margin-top:12px;min-height:18px;font-family:var(--accent);font-style:italic}
+
+#results{display:none} #results.show{display:block;animation:rise .6s cubic-bezier(.2,.7,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+.diag{margin-top:26px;border-radius:16px;padding:24px 22px;text-align:center;border:1px solid}
+.diag .tag{font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;margin-bottom:10px}
+.diag h2{font-family:var(--display);font-weight:600;font-size:clamp(20px,4.6vw,26px);line-height:1.22;color:var(--cream);text-wrap:balance}
+.diag p{font-size:14.5px;color:rgba(250,250,247,.85);margin-top:10px;max-width:470px;margin-left:auto;margin-right:auto}
+.diag.urg{background:linear-gradient(180deg,rgba(224,128,90,.16),rgba(13,43,31,.4));border-color:var(--red)}
+.diag.urg .tag{color:var(--red)}
+.diag.trat{background:linear-gradient(180deg,rgba(224,177,74,.14),rgba(13,43,31,.4));border-color:var(--amber)}
+.diag.trat .tag{color:var(--amber)}
+.diag.acond{background:linear-gradient(180deg,rgba(201,168,76,.14),rgba(13,43,31,.4));border-color:var(--gold)}
+.diag.acond .tag{color:var(--gold2)}
+
+.seclabel{display:flex;align-items:center;gap:14px;margin:34px 0 16px}
+.seclabel span{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);white-space:nowrap}
+.seclabel::before,.seclabel::after{content:"";height:1px;flex:1;background:var(--gold-dim)}
+
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cbox{background:rgba(255,255,255,.035);border:1px solid rgba(201,168,76,.18);border-radius:13px;padding:18px 16px;text-align:center}
+.cbox.now{opacity:.85} .cbox.next{border-color:var(--gold-dim);background:rgba(201,168,76,.08)}
+.cbox .cl{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.cbox .cv{font-family:var(--display);font-weight:600;font-size:clamp(20px,4.4vw,26px);color:var(--cream);font-variant-numeric:tabular-nums;line-height:1.1}
+.cbox.next .cv{color:var(--gold2)}
+.delta{margin-top:12px;background:linear-gradient(180deg,rgba(201,168,76,.16),rgba(13,43,31,.35));border:1px solid var(--gold);border-radius:14px;padding:22px 18px;text-align:center}
+.delta .dl{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.delta .dv{font-family:var(--display);font-weight:600;font-size:clamp(28px,7.5vw,44px);color:var(--gold2);font-variant-numeric:tabular-nums;line-height:1.05}
+.delta .dd{font-size:14px;color:rgba(250,250,247,.85);margin-top:10px}
+.delta .dd b{color:var(--gold2)}
+.mult{font-family:var(--accent);font-style:italic;font-size:15px;color:var(--cream);margin-top:14px;text-align:center;line-height:1.5}
+.mult b{color:var(--gold2)}
+
+.levers{display:flex;flex-direction:column;gap:10px}
+.lever{background:rgba(255,255,255,.03);border:1px solid rgba(201,168,76,.16);border-radius:12px;padding:15px 16px;display:flex;gap:13px;align-items:flex-start}
+.lever .ln{font-family:var(--display);font-weight:700;font-size:14px;color:#1a1206;background:linear-gradient(180deg,var(--gold2),var(--gold));width:26px;height:26px;border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.lever .lt{font-family:var(--sans);font-weight:600;font-size:14.5px;color:var(--cream)}
+.lever .ls{font-size:13.5px;color:rgba(250,250,247,.78);margin-top:3px}
+.lever .ls b{color:var(--gold2);font-weight:600}
+.note{font-family:var(--accent);font-style:italic;font-size:15px;color:var(--gold2);text-align:center;margin-top:16px;line-height:1.5}
+
+.brain{background:rgba(255,255,255,.025);border:1px dashed var(--gold-dim);border-radius:14px;padding:22px 20px}
+.brain h3{font-family:var(--display);font-size:18px;font-weight:600;color:var(--cream);text-align:center;margin-bottom:6px}
+.brain p{font-size:14.5px;color:rgba(250,250,247,.85);text-align:center;max-width:500px;margin:0 auto}
+.brain .chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:16px}
+.brain .chip{font-size:12.5px;padding:6px 12px;border-radius:999px;background:rgba(201,168,76,.1);border:1px solid var(--gold-dim);color:var(--cream)}
+
+.offer{margin-top:12px;background:linear-gradient(180deg,rgba(201,168,76,.13),rgba(13,43,31,.42));border:1px solid var(--gold);border-radius:16px;padding:28px 22px;text-align:center}
+.offer .big{font-family:var(--display);font-weight:600;font-size:clamp(19px,4.4vw,25px);color:var(--cream);line-height:1.35;text-wrap:balance}
+.offer .big b{color:var(--gold2)}
+.offer .cold{font-size:15px;color:rgba(250,250,247,.9);margin-top:16px;max-width:480px;margin-left:auto;margin-right:auto}
+.offer .cold b{color:var(--gold2)}
+.offer .terms{display:flex;flex-direction:column;gap:7px;margin:18px auto 0;max-width:430px}
+.offer .term{font-size:14px;color:rgba(250,250,247,.9);display:flex;gap:9px;align-items:flex-start;text-align:left}
+.offer .term .c{color:var(--gold2);flex-shrink:0}
+.offer .stupid{font-family:var(--accent);font-style:italic;font-size:16px;color:var(--gold2);margin-top:20px;line-height:1.5}
+.offer .btn{margin-top:18px;max-width:360px;margin-left:auto;margin-right:auto}
+.offer .lock{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-top:13px}
+
+.redo{display:block;background:none;border:none;color:var(--gold);font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;text-align:center;width:100%;margin-top:18px;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.disc{font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:center;margin-top:22px;line-height:1.7}
+@media (prefers-reduced-motion: reduce){#results.show{animation:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">
+    <div class="wordmark">PRACTIS</div>
+    <div class="tagline">Tu práctica vive · Tú la diriges</div>
+  </div>
+
+  <div id="intro">
+    <div class="eyebrow">Diagnóstico gratuito · 3 minutos</div>
+    <h1>La radiografía de tu negocio</h1>
+    <p class="sub">5 números. Te muestro las palancas de tu negocio y por dónde tienes más espacio para crecer.</p>
+
+    <form class="card" id="calc">
+      <div class="field">
+        <label for="pros">1 · ¿Cuántos prospectos te llegan al mes?<span class="lblhint">Personas nuevas que te contactan o llegan. Si no lo sabes, pon tu mejor estimado.</span></label>
+        <div class="inputwrap"><input id="pros" inputmode="numeric" placeholder="100" required></div>
+      </div>
+      <div class="field">
+        <label for="conv">2 · ¿Qué % se vuelve cliente?<span class="lblhint">De cada 100 que llegan, ¿cuántos agendan y pagan? Ej. 30%.</span></label>
+        <div class="inputwrap"><input class="pct" id="conv" inputmode="numeric" placeholder="30" required><span class="sfx">%</span></div>
+      </div>
+      <div class="field">
+        <label for="ticket">3 · Ticket promedio por consulta<span class="lblhint">Lo que cobras en promedio por visita.</span></label>
+        <div class="inputwrap"><span class="pfx">$</span><input class="money" id="ticket" inputmode="numeric" placeholder="1,200" required></div>
+      </div>
+      <div class="field">
+        <label for="frec">4 · ¿Cuántas veces al año regresa un cliente?<span class="lblhint">Frecuencia de compra. Ej. 2 veces al año.</span></label>
+        <div class="inputwrap"><input id="frec" inputmode="decimal" placeholder="2" required></div>
+      </div>
+      <div class="field">
+        <label for="margen">5 · Tu margen por consulta<span class="lblhint">De cada $100 que cobras, ¿cuánto te queda tras costos? Si no sabes, deja 60%.</span></label>
+        <div class="inputwrap"><input class="pct" id="margen" inputmode="numeric" placeholder="60" value="60"><span class="sfx">%</span></div>
+      </div>
+      <div class="field">
+        <label for="fuente">¿De dónde salen estos números?</label>
+        <div class="inputwrap"><select id="fuente" required>
+          <option value="" disabled selected>Elige una opción</option>
+          <option value="estimado">Los estimé — no los mido</option>
+          <option value="mixto">Algunos reales, otros estimados</option>
+          <option value="real">Son datos reales que sí mido</option>
+        </select></div>
+      </div>
+      <button class="btn" type="submit">Ver mi radiografía</button>
+      <div class="err" id="err"></div>
+    </form>
+  </div>
+
+  <div id="results">
+    <div class="diag" id="diag"></div>
+
+    <div class="seclabel"><span>Tu negocio hoy vs. con PRACTIS</span></div>
+    <div class="compare">
+      <div class="cbox now"><div class="cl">Utilidad hoy · al año</div><div class="cv" id="uNow"></div></div>
+      <div class="cbox next"><div class="cl">Potencial · al año</div><div class="cv" id="uNext"></div></div>
+    </div>
+    <div class="delta">
+      <div class="dl">Espacio de crecimiento estimado</div>
+      <div class="dv" id="deltaV"></div>
+      <div class="dd" id="deltaD"></div>
+    </div>
+    <p class="mult" id="mult"></p>
+
+    <div class="seclabel"><span>Solo movimos 10% en 5 palancas</span></div>
+    <div class="levers">
+      <div class="lever"><div class="ln">1</div><div><div class="lt">Traer más prospectos <b style="color:var(--gold2)">+10%</b></div><div class="ls">1 estrategia: <b>convierte a tus clientes actuales en tu fuente #1 de referidos</b> con un sistema simple de pedir recomendaciones.</div></div></div>
+      <div class="lever"><div class="ln">2</div><div><div class="lt">Subir la conversión <b style="color:var(--gold2)">+10%</b></div><div class="ls">1 estrategia: <b>un guion para la primera consulta</b> que hace que digan "sí" sin que tú vendas.</div></div></div>
+      <div class="lever"><div class="ln">3</div><div><div class="lt">Subir el ticket promedio <b style="color:var(--gold2)">+10%</b></div><div class="ls">1 estrategia: <b>empaqueta en planes, no en consultas sueltas</b>. Subes el ticket sin subir tu tarifa por hora.</div></div></div>
+      <div class="lever"><div class="ln">4</div><div><div class="lt">Aumentar la frecuencia <b style="color:var(--gold2)">+10%</b></div><div class="ls">1 estrategia: <b>un protocolo de seguimiento</b> que trae de vuelta al cliente — sin rogar.</div></div></div>
+      <div class="lever"><div class="ln">5</div><div><div class="lt">Mejorar el margen <b style="color:var(--gold2)">+10%</b></div><div class="ls">1 estrategia: <b>detecta el servicio que te cuesta dinero</b> y rediséñalo o elimínalo.</div></div></div>
+    </div>
+    <p class="note">Estas son 5 de <b>más de 80 estrategias</b>. Solo movimos 10%. El trabajo real es elegir las que tu negocio necesita.</p>
+
+    <div class="seclabel"><span>Pero necesitas más que fórmulas</span></div>
+    <div class="brain">
+      <h3>PRACTIS es tu cerebro empresarial</h3>
+      <p>No puedes jalar estas palancas si sigues siendo el cuello de botella de todo. Por eso adentro también trabajamos lo que nadie te enseñó:</p>
+      <div class="chips">
+        <span class="chip">Liderazgo para delegar</span>
+        <span class="chip">Mentalidad de dueño</span>
+        <span class="chip">Imagen personal</span>
+        <span class="chip">Procesos que no dependen de ti</span>
+        <span class="chip">Administración de tu tiempo</span>
+      </div>
+    </div>
+
+    <div class="offer">
+      <div class="big" id="offerBig"></div>
+      <p class="cold" id="offerCold"></p>
+      <div class="terms">
+        <div class="term"><span class="c">✓</span><p>PRACTIS IA 24/7 · sesión en vivo semanal · plan de 90 días · círculo de pares</p></div>
+        <div class="term"><span class="c">✓</span><p>Garantía de 14 días: si no es para ti, se te devuelve.</p></div>
+        <div class="term"><span class="c">✓</span><p>Precio congelado de por vida. Cancela cuando quieras.</p></div>
+      </div>
+      <p class="stupid" id="stupid"></p>
+      <a class="btn" href="https://www.skool.com/practis-circulo" target="_blank" rel="noopener">Entrar a PRACTIS Círculo</a>
+      <div class="lock">Los fundadores conservan $59 para siempre</div>
+    </div>
+
+    <button class="redo" id="redo">← Volver a calcular con otros números</button>
+    <div class="disc">Estimación educativa con tus propios números · No es una promesa de resultados · PRACTIS no accede a tu información fiscal · membresía convertida a ~$20 MXN/USD</div>
+  </div>
+</div>
+
+<script>
+const USD_MXN = 20;
+const MEMBERSHIP_YEAR = 59*12*USD_MXN;
+const MX = new Intl.NumberFormat('es-MX',{style:'currency',currency:'MXN',maximumFractionDigits:0});
+const num = v => Number(String(v).replace(/[^0-9.]/g,''))||0;
+const $ = id => document.getElementById(id);
+
+document.querySelectorAll('input.money').forEach(el=>{
+  el.addEventListener('input',()=>{const r=el.value.replace(/[^0-9]/g,'');el.value=r?Number(r).toLocaleString('es-MX'):'';});
+});
+
+$('calc').addEventListener('submit',e=>{
+  e.preventDefault();
+  const err=$('err');
+  const P=num($('pros').value), conv=num($('conv').value), ticket=num($('ticket').value),
+        frec=num($('frec').value), margen=num($('margen').value)||60, fuente=$('fuente').value;
+  if(!P||!conv||!ticket||!frec){ err.textContent='Llena prospectos, conversión, ticket y frecuencia para calcular.'; return; }
+  if(!fuente){ err.textContent='Dime de dónde salen tus números para darte el diagnóstico correcto.'; return; }
+  err.textContent='';
+
+  const clientesAno = P*12*(conv/100);
+  const ventas = clientesAno*ticket*frec;
+  const utilidad = ventas*(margen/100);
+
+  const f=1.1;
+  const conv2=Math.min(conv*f,100), margen2=Math.min(margen*f,95);
+  const clientes2 = P*f*12*(conv2/100);
+  const ventas2 = clientes2*(ticket*f)*(frec*f);
+  const utilidad2 = ventas2*(margen2/100);
+
+  const delta = Math.max(utilidad2-utilidad,0);
+  const roi = delta/MEMBERSHIP_YEAR;
+  const perMonth = delta/12;
+  const upPct = utilidad>0 ? Math.round((utilidad2/utilidad-1)*100) : 61;
+
+  $('uNow').textContent = MX.format(utilidad);
+  $('uNext').textContent = MX.format(utilidad2);
+  $('deltaV').textContent = '+'+MX.format(delta);
+  $('deltaD').innerHTML = `Más utilidad al año, en teoría — <b>equivale a ${MX.format(perMonth)} al mes.</b>`;
+  $('mult').innerHTML = `Subiste 10% en cada palanca y la utilidad no sube 10%… sube <b>${upPct}%</b>. Así se multiplican entre sí.`;
+
+  const diag=$('diag');
+  const T={
+    estimado:{c:'urg',tag:'Diagnóstico · Urgencias',h:'Estás dirigiendo a ciegas.',p:'No mides tus números — y lo que no se mide, es difícil de mejorar. Tu caso entra de urgencia: lo primero es ver tu negocio con claridad. PRACTIS te da los instrumentos y el método.'},
+    mixto:{c:'trat',tag:'Diagnóstico · Tratamiento',h:'Tienes la mitad de la foto.',p:'Sabes algunos números, otros los estimas. Con huecos, las decisiones salen a medias. Necesitas un tratamiento para completar y ordenar tus números. PRACTIS es ese tratamiento.'},
+    real:{c:'acond',tag:'Diagnóstico · Acondicionamiento',h:'Ya vas adelante del 90%.',p:'Mides tu negocio — muy pocos lo hacen. Ahora el reto no es saber, es crecer con método y no con suerte. Necesitas acondicionamiento: el sistema para mover esas palancas con disciplina. Eso es PRACTIS.'}
+  }[fuente];
+  diag.className='diag '+T.c;
+  diag.innerHTML=`<div class="tag">${T.tag}</div><h2>${T.h}</h2><p>${T.p}</p>`;
+
+  $('offerBig').innerHTML = `Aprende a mover tus 5 palancas por <b>$59 al mes</b>.`;
+  $('offerCold').innerHTML = `Un consultorio de negocios cobra eso por una sola hora. Aquí tienes un asesor con IA 24/7, una sesión en vivo cada semana y una comunidad — todo el mes, por el precio de una comida.`;
+  $('stupid').textContent = `El riesgo es mío: 14 días de garantía. Lo único que necesitas es decidir empezar.`;
+
+  $('intro').style.display='none';
+  $('results').classList.add('show');
+  window.scrollTo({top:0,behavior:'smooth'});
+});
+
+$('redo').addEventListener('click',()=>{
+  $('results').classList.remove('show');
+  $('intro').style.display='';
+  window.scrollTo({top:0,behavior:'smooth'});
+});
+</script>
+</body>
+</html>

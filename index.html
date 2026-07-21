@@ -3,12 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Reto PRACTIS en Vivo · Jueves 9 de julio</title>
-<meta property="og:title" content="Reto PRACTIS en Vivo · Jueves 9 de julio, 7:00 PM">
-<meta property="og:description" content="Trae el reto #1 de tu negocio. Lo resolvemos en vivo, frente a todos. Sesión gratuita por Zoom.">
+<title>PRACTIS Círculo · Tu asesor de negocios de cabecera</title>
+<meta property="og:title" content="Eres excelente en tu profesión. ¿Y en el negocio detrás?">
+<meta property="og:description" content="El Centro de Decisiones para profesionistas independientes en México. PRACTIS IA 24/7, sesión en vivo cada semana y un círculo de pares. $59 USD/mes.">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
   --green:#0D2B1F; --green2:#1A4030; --green3:#0a2018;
@@ -18,99 +19,113 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{
-  font-family:'Instrument Sans',sans-serif;
-  color:var(--cream);
+  font-family:'Instrument Sans',sans-serif;color:var(--cream);
   background:
     radial-gradient(1200px 600px at 50% -10%, rgba(201,168,76,.10), transparent 60%),
-    radial-gradient(900px 500px at 90% 110%, rgba(26,64,48,.55), transparent 60%),
+    radial-gradient(900px 500px at 90% 108%, rgba(26,64,48,.55), transparent 60%),
     linear-gradient(160deg,var(--green3) 0%,var(--green) 45%,var(--green3) 100%);
-  background-attachment:fixed;
-  min-height:100vh;
-  line-height:1.55;
-  -webkit-font-smoothing:antialiased;
+  background-attachment:fixed;min-height:100vh;line-height:1.55;-webkit-font-smoothing:antialiased;
 }
 body::before{
   content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.04;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
-.wrap{position:relative;z-index:1;max-width:680px;margin:0 auto;padding:44px 22px 70px}
+.wrap{position:relative;z-index:1;max-width:680px;margin:0 auto;padding:40px 22px 70px}
 .fade{opacity:0;transform:translateY(16px);animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
 @keyframes rise{to{opacity:1;transform:none}}
 @media (prefers-reduced-motion: reduce){.fade{animation:none;opacity:1;transform:none}}
 
-/* HEADER */
-.brand{display:flex;flex-direction:column;align-items:center;text-align:center;gap:13px;margin-bottom:30px}
-.emblem{width:68px;height:68px}
-.wordmark{font-family:'Cinzel',serif;font-weight:700;letter-spacing:.42em;font-size:22px;
+.brand{display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px;margin-bottom:26px}
+.emblem{width:60px;height:60px}
+.wordmark{font-family:'Cinzel',serif;font-weight:700;letter-spacing:.42em;font-size:20px;
   background:linear-gradient(180deg,var(--gold2),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent;padding-left:.42em}
-.tagline{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);opacity:.85}
-.rule{width:54px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:2px auto}
+.tagline{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);opacity:.85}
 
-/* HERO */
-.eyebrow{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);text-align:center;margin-bottom:14px}
-h1{font-family:'Cinzel',serif;font-weight:600;font-size:clamp(28px,6.4vw,42px);line-height:1.12;text-align:center;color:var(--cream)}
-.sub{font-family:'Fraunces',serif;font-style:italic;font-size:clamp(16px,3.6vw,21px);color:var(--gold2);text-align:center;margin-top:12px;font-weight:400}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);text-align:center;margin-bottom:16px}
+h1{font-family:'Cinzel',serif;font-weight:600;font-size:clamp(29px,6.6vw,44px);line-height:1.08;text-align:center;color:var(--cream);text-wrap:balance}
+.sub{font-family:'Fraunces',serif;font-style:italic;font-size:clamp(16px,3.8vw,21px);color:var(--gold2);text-align:center;margin:16px auto 0;max-width:570px;font-weight:400;line-height:1.5}
 
-/* DATE BLOCK */
-.when{display:flex;justify-content:center;gap:0;margin:28px auto 0;border:1px solid var(--gold-dim);border-radius:14px;overflow:hidden;max-width:480px}
-.when div{flex:1;text-align:center;padding:14px 8px;border-right:1px solid var(--gold-dim)}
-.when div:last-child{border-right:none}
-.when .k{font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
-.when .v{font-family:'Cinzel',serif;font-size:15px;font-weight:600;color:var(--cream)}
+.cta-wrap{text-align:center;margin:30px 0 0}
+.btn{display:inline-block;text-align:center;font-family:'Cinzel',serif;font-weight:600;letter-spacing:.1em;
+  font-size:15px;color:#1a1206;background:linear-gradient(180deg,var(--gold2),var(--gold));
+  border:none;border-radius:11px;padding:16px 32px;cursor:pointer;transition:transform .2s,box-shadow .3s;text-decoration:none}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 34px rgba(201,168,76,.32)}
+.btn:focus-visible{outline:3px solid var(--gold2);outline-offset:2px}
+.microcopy{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:13px}
+.btn2{display:inline-block;margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:.08em;color:var(--gold2);text-decoration:none;border-bottom:1px solid var(--gold-dim);padding-bottom:3px;transition:color .2s,border-color .2s}
+.btn2:hover{color:var(--cream);border-color:var(--gold)}
+.sistema{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);opacity:.72;margin-top:1px}
+.hostphoto{width:106px;height:106px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);box-shadow:0 8px 26px rgba(0,0,0,.38);margin:0 auto 15px;display:block}
+.seal{width:118px;height:118px;margin:0 auto 4px;display:block}
 
-.intro{margin:28px auto 0;max-width:560px;font-size:16px;color:rgba(250,250,247,.86);text-align:center}
-.intro b{color:var(--gold2);font-weight:600}
-
-/* SECTION LABEL */
-.seclabel{display:flex;align-items:center;gap:14px;margin:42px 0 20px}
-.seclabel span{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);white-space:nowrap}
+.seclabel{display:flex;align-items:center;gap:14px;margin:52px 0 20px}
+.seclabel span{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);white-space:nowrap}
 .seclabel::before,.seclabel::after{content:"";height:1px;flex:1;background:var(--gold-dim)}
 
-/* WHAT HAPPENS */
-.steps{display:flex;flex-direction:column;gap:12px}
-.step{display:flex;gap:14px;align-items:flex-start;background:rgba(255,255,255,.035);border:1px solid rgba(201,168,76,.18);border-radius:13px;padding:16px 16px}
-.step .n{font-family:'Cinzel',serif;font-weight:700;font-size:17px;color:var(--gold2);min-width:22px;line-height:1.4}
-.step p{font-size:14.5px;color:rgba(250,250,247,.86)}
-.step b{color:var(--gold2);font-weight:600}
+h2{font-family:'Cinzel',serif;font-weight:600;font-size:clamp(21px,4.6vw,27px);line-height:1.18;text-align:center;color:var(--cream);text-wrap:balance;margin-bottom:8px}
+.lead{font-size:16px;color:rgba(250,250,247,.86);text-align:center;max-width:570px;margin:0 auto}
+.lead b{color:var(--gold2);font-weight:600}
 
-/* HOST */
-.host{margin-top:14px;background:rgba(255,255,255,.025);border:1px dashed var(--gold-dim);border-radius:13px;padding:18px;text-align:center}
-.host .k{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin-bottom:7px}
-.host p{font-size:14.5px;color:rgba(250,250,247,.82)}
+.pains{display:flex;flex-direction:column;gap:10px;margin-top:8px}
+.pain{display:flex;gap:13px;align-items:flex-start;background:rgba(255,255,255,.03);border:1px solid rgba(201,168,76,.16);border-radius:12px;padding:15px 16px}
+.pain .mk{color:var(--gold2);font-size:17px;line-height:1.4;flex-shrink:0}
+.pain p{font-size:15px;color:rgba(250,250,247,.9)}
+.pain b{color:var(--gold2);font-weight:600}
+
+.reframe{margin-top:8px;background:linear-gradient(180deg,rgba(201,168,76,.09),rgba(13,43,31,.35));border:1px solid var(--gold-dim);border-left:3px solid var(--gold);border-radius:14px;padding:26px 24px}
+.reframe p{font-family:'Fraunces',serif;font-size:clamp(17px,3.4vw,20px);line-height:1.55;color:var(--cream)}
+.reframe b{color:var(--gold2);font-style:italic}
+
+.whatis{text-align:center;max-width:590px;margin:0 auto 4px}
+.whatis p{font-size:16px;color:rgba(250,250,247,.88)}
+.whatis b{color:var(--gold2);font-weight:600}
+
+.pillars{display:flex;flex-direction:column;gap:12px;margin-top:18px}
+.pillar{display:flex;gap:15px;align-items:flex-start;background:rgba(255,255,255,.035);border:1px solid rgba(201,168,76,.2);border-radius:14px;padding:18px 18px}
+.pillar .ic{font-family:'Cinzel',serif;font-weight:700;font-size:15px;color:#1a1206;background:linear-gradient(180deg,var(--gold2),var(--gold));width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.pillar h3{font-family:'Cinzel',serif;font-size:16.5px;font-weight:600;color:var(--cream);margin-bottom:5px}
+.pillar p{font-size:14.5px;color:rgba(250,250,247,.86)}
+.pillar .star{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold-dim);border-radius:999px;padding:2px 8px;margin-left:8px;vertical-align:middle;white-space:nowrap}
+.bigline{font-family:'Fraunces',serif;font-style:italic;font-size:clamp(18px,4vw,23px);color:var(--gold2);text-align:center;margin-top:24px}
+
+.fit{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:520px){.fit{grid-template-columns:1fr}}
+.fitcard{border-radius:13px;padding:18px 18px}
+.fitcard.yes{background:rgba(201,168,76,.08);border:1px solid var(--gold-dim)}
+.fitcard.no{background:rgba(255,255,255,.02);border:1px solid rgba(242,239,230,.12)}
+.fitcard .h{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:11px}
+.fitcard.yes .h{color:var(--gold2)} .fitcard.no .h{color:var(--muted)}
+.fitcard ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+.fitcard li{font-size:14px;color:rgba(250,250,247,.86);padding-left:20px;position:relative;line-height:1.45}
+.fitcard.yes li::before{content:"✓";position:absolute;left:0;color:var(--gold2)}
+.fitcard.no li::before{content:"✕";position:absolute;left:0;color:rgba(242,239,230,.4)}
+
+.host{background:rgba(255,255,255,.025);border:1px dashed var(--gold-dim);border-radius:14px;padding:22px;text-align:center}
+.host .k{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin-bottom:9px}
+.host p{font-size:15px;color:rgba(250,250,247,.86)}
 .host b{color:var(--cream)}
+.host .said{font-family:'Fraunces',serif;font-style:italic;color:var(--gold2);margin-top:12px;font-size:15px}
 
-/* FORM */
-.formcard{background:rgba(255,255,255,.04);border:1px solid rgba(201,168,76,.35);border-radius:16px;padding:24px 20px;box-shadow:0 18px 50px rgba(0,0,0,.28)}
-.field{margin-bottom:15px}
-label{display:block;font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:7px}
-input,textarea{
-  width:100%;background:rgba(13,43,31,.55);border:1px solid rgba(201,168,76,.3);border-radius:10px;
-  color:var(--cream);font-family:'Instrument Sans',sans-serif;font-size:15.5px;padding:13px 14px;outline:none;
-  transition:border-color .2s, box-shadow .2s
-}
-input:focus,textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,168,76,.15)}
-input::placeholder,textarea::placeholder{color:rgba(242,239,230,.35)}
-textarea{resize:vertical;min-height:88px}
-.hint{font-size:12.5px;color:var(--muted);margin-top:6px;font-style:italic;font-family:'Fraunces',serif}
-.btn{display:block;width:100%;text-align:center;font-family:'Cinzel',serif;font-weight:600;letter-spacing:.12em;
-  font-size:15px;color:#1a1206;background:linear-gradient(180deg,var(--gold2),var(--gold));
-  border:none;border-radius:11px;padding:16px;cursor:pointer;margin-top:6px;transition:transform .2s,opacity .2s,box-shadow .3s}
-.btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(201,168,76,.3)}
-.btn:focus-visible{outline:3px solid var(--gold2);outline-offset:2px}
-.btn[disabled]{opacity:.45;cursor:wait;transform:none;box-shadow:none}
-.privacy{text-align:center;font-size:11.5px;color:rgba(242,239,230,.45);margin-top:12px}
+.testis{display:flex;flex-direction:column;gap:12px}
+.tcard{background:rgba(255,255,255,.035);border:1px solid rgba(201,168,76,.18);border-radius:14px;padding:20px 20px;position:relative}
+.tcard .qm{font-family:'Cinzel',serif;font-size:44px;line-height:.2;color:var(--gold-dim);display:block;height:20px}
+.tcard .quote{font-family:'Fraunces',serif;font-style:italic;font-size:15px;color:rgba(250,250,247,.92);line-height:1.58;margin-top:6px}
+.tcard .who{margin-top:15px;display:flex;flex-direction:column;gap:3px}
+.tcard .name{font-family:'Cinzel',serif;font-size:14px;color:var(--gold2);font-weight:600}
+.tcard .role{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 
-/* SUCCESS */
-.success{display:none;border:1px solid var(--gold);border-radius:16px;padding:30px 22px;text-align:center;
-  background:linear-gradient(180deg,rgba(201,168,76,.12),rgba(13,43,31,.4))}
-.success.show{display:block;animation:rise .6s ease forwards}
-.success h3{font-family:'Cinzel',serif;font-size:22px;color:var(--gold2);font-weight:600;margin-bottom:10px}
-.success p{font-size:15px;color:rgba(250,250,247,.86);max-width:440px;margin:0 auto 8px}
-.errormsg{display:none;text-align:center;font-size:13.5px;color:var(--gold2);margin-top:12px}
-.errormsg.show{display:block}
+.offer{background:linear-gradient(180deg,rgba(201,168,76,.12),rgba(13,43,31,.4));border:1px solid var(--gold);border-radius:16px;padding:28px 22px;text-align:center}
+.offer .price{font-family:'Cinzel',serif;font-size:clamp(26px,6vw,34px);font-weight:600;color:var(--gold2)}
+.offer .price span{font-family:'Instrument Sans',sans-serif;font-size:15px;color:var(--muted);font-weight:400;letter-spacing:.02em}
+.offer .terms{display:flex;flex-direction:column;gap:8px;margin:16px auto 0;max-width:420px}
+.offer .term{font-size:14.5px;color:rgba(250,250,247,.9);display:flex;gap:9px;align-items:flex-start;text-align:left}
+.offer .term b{color:var(--gold2);font-weight:600}
+.offer .term .c{color:var(--gold2);flex-shrink:0}
+.offer .btn{margin-top:22px}
+.offer .lock{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-top:14px}
 
-.closing{font-family:'Fraunces',serif;font-style:italic;font-size:16px;color:var(--gold2);text-align:center;margin:44px auto 0;max-width:520px;line-height:1.6}
-.foot{text-align:center;margin-top:28px;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:rgba(242,239,230,.4)}
+.closing{font-family:'Fraunces',serif;font-style:italic;font-size:16px;color:var(--gold2);text-align:center;margin:52px auto 0;max-width:520px;line-height:1.6}
+.foot{text-align:center;margin-top:26px;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:rgba(242,239,230,.4)}
 </style>
 </head>
 <body>
@@ -118,118 +133,150 @@ textarea{resize:vertical;min-height:88px}
 
 <header class="brand fade">
 <svg class="emblem" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-<circle cx="50" cy="50" r="47" stroke="#C9A84C" stroke-width="1.2"/>
-<circle cx="50" cy="50" r="41" stroke="#C9A84C" stroke-width=".6" opacity=".55"/>
-<g stroke="#E8C97A" stroke-width="2.4" stroke-linecap="round">
-<line x1="38" y1="34" x2="38" y2="66"/>
-<line x1="46" y1="34" x2="46" y2="66"/>
-<line x1="54" y1="34" x2="54" y2="66"/>
-<line x1="62" y1="34" x2="62" y2="58" transform="rotate(18 62 46)"/>
-</g>
-<line x1="32" y1="34" x2="68" y2="34" stroke="#C9A84C" stroke-width="1.6" stroke-linecap="round"/>
-<line x1="32" y1="66" x2="56" y2="66" stroke="#C9A84C" stroke-width="1.6" stroke-linecap="round"/>
+<polygon points="50,7 88,28.5 88,71.5 50,93 12,71.5 12,28.5" fill="none" stroke="#C9A84C" stroke-width="2.4"/>
+<text x="50" y="50" text-anchor="middle" dominant-baseline="central" font-family="'Cinzel',serif" font-weight="700" font-size="44" fill="#E8C97A">P</text>
 </svg>
 <div class="wordmark">PRACTIS</div>
-<div class="rule"></div>
 <div class="tagline">Tu práctica vive · Tú la diriges</div>
+<div class="sistema">Sistema</div>
 </header>
 
-<div class="fade" style="animation-delay:.1s">
-<div class="eyebrow">Sesión en vivo · Sin costo · Cupo limitado</div>
-<h1>Reto PRACTIS en Vivo</h1>
-<div class="sub">Trae el reto #1 de tu negocio. Lo resolvemos frente a todos.</div>
-
-<div class="when" role="group" aria-label="Fecha y hora del evento">
-<div><div class="k">Día</div><div class="v">Jueves 9 · Jul</div></div>
-<div><div class="k">Hora</div><div class="v">7:00 PM</div></div>
-<div><div class="k">Dónde</div><div class="v">Zoom · CDMX</div></div>
+<div class="fade" style="animation-delay:.08s">
+<div class="eyebrow">Círculo privado · Profesionistas independientes · México</div>
+<h1>Eres excelente en tu profesión. ¿Y en el negocio detrás?</h1>
+<div class="sub">Médico, abogado, contador, arquitecto, consultor… a casi nadie le enseñaron a dirigir el negocio detrás de su profesión. Por eso tantos terminan cargándolo en soledad. Aquí aprendes a dirigirlo — y a recuperar tu tiempo.</div>
+<div class="cta-wrap">
+  <a href="diagnostico.html" class="btn">Haz tu radiografía gratis · 3 min</a>
+  <div class="microcopy">Descubre cuánto puedes crecer — sin costo, sin registro</div>
+  <a href="https://www.skool.com/practis-circulo" class="btn2" target="_blank" rel="noopener">¿Ya decidido? Entra directo a PRACTIS Círculo →</a>
+</div>
 </div>
 
-<p class="intro">Esto no es un curso ni un webinar de venta de dos horas. Es una <b>sesión de asesoría real, en público</b>: tomo dos o tres retos de quienes se registren y los diagnostico en vivo, con preguntas directas y un plan concreto. Tú ves cómo se piensa un negocio desde adentro — aunque el caso no sea el tuyo.</p>
+<div class="seclabel fade"><span>¿Te suena?</span></div>
+<div class="pains fade">
+  <div class="pain"><span class="mk">—</span><p>Facturas bien, pero al final del mes <b>no sabes a dónde se fue el dinero</b>.</p></div>
+  <div class="pain"><span class="mk">—</span><p>No subes tus precios desde hace años <b>por miedo a perder clientes</b>.</p></div>
+  <div class="pain"><span class="mk">—</span><p>Si tú no estás, el negocio no factura. <b>No te puedes ni enfermar.</b></p></div>
+  <div class="pain"><span class="mk">—</span><p>Trabajas más horas que nadie de tu equipo <b>y eres el que menos se paga.</b></p></div>
+  <div class="pain"><span class="mk">—</span><p>Eres experto en tu profesión, no en números — <b>y nadie te lo enseñó.</b></p></div>
 </div>
 
-<div class="seclabel fade" style="animation-delay:.2s"><span>Qué va a pasar</span></div>
-<div class="steps fade" style="animation-delay:.25s">
-<div class="step"><div class="n">I</div><p><b>Te registras y escribes tu reto.</b> Los casos que se resuelven en vivo se eligen entre los registrados. Entre más claro lo escribas, más probable que sea el tuyo.</p></div>
-<div class="step"><div class="n">II</div><p><b>El jueves entramos a Zoom a las 7:00 PM.</b> Sin teoría, sin diapositivas eternas. Directo a los casos: diagnóstico, preguntas incómodas y el siguiente paso concreto.</p></div>
-<div class="step"><div class="n">III</div><p><b>Te llevas algo aplicable esa misma noche.</b> Un negocio se destraba con una buena decisión, no con más información.</p></div>
+<div class="seclabel fade"><span>La verdad incómoda</span></div>
+<div class="reframe fade">
+  <p>No trabajas poco. El problema <b>no es esfuerzo</b> — es que cargas el negocio en la espalda y nunca nadie se sentó contigo a dirigirlo. Un negocio no se destraba con más horas ni más clientes. <b>Se destraba con las decisiones correctas:</b> qué cobrar, qué soltar, qué dejar de hacer.</p>
 </div>
 
-<div class="host fade" style="animation-delay:.3s">
-<div class="k">Quién dirige la sesión</div>
-<p><b>Ezequiel González Ruiz</b> · Más de 20 años asesorando negocios desde la banca y la consultoría (UNAM · ITAM · Harvard). Salió de su propia jaula de oro; hoy ayuda a profesionistas y dueños de negocio a salir de la suya.</p>
+<div class="seclabel fade"><span>Qué es PRACTIS Círculo</span></div>
+<div class="whatis fade">
+  <p><b>No es un curso. No es una comunidad de likes.</b> Es tu Centro de Decisiones — tu asesor de negocios de cabecera. Traes tus decisiones reales (precios, clientes, cobrar, delegar, crecer) y las trabajamos juntos.</p>
+</div>
+<div class="pillars fade">
+  <div class="pillar">
+    <div class="ic">IA</div>
+    <div><h3>PRACTIS IA · 24/7 <span class="star">Tu ventaja injusta</span></h3><p>Tu asesor de negocios disponible a cualquier hora, con <b>contexto fiscal mexicano real</b>. Pregúntale lo que le preguntarías a un consultor caro — sin esperar y sin tarifa por hora.</p></div>
+  </div>
+  <div class="pillar">
+    <div class="ic">✦</div>
+    <div><h3>Sesión en vivo cada semana</h3><p>Diagnóstico de casos reales y plan concreto, en grupo. Ves cómo se piensa un negocio desde adentro — aunque el caso no sea el tuyo.</p></div>
+  </div>
+  <div class="pillar">
+    <div class="ic">90</div>
+    <div><h3>Diagnóstico inicial + plan de 90 días</h3><p>Al entrar, una radiografía de tu negocio y un plan claro para los próximos 90 días. Sabes exactamente qué mover primero.</p></div>
+  </div>
+  <div class="pillar">
+    <div class="ic">◎</div>
+    <div><h3>Círculo cerrado de pares</h3><p>Profesionistas y dueños saliendo de la misma jaula que tú. Dejas de dirigir a ciegas y en soledad.</p></div>
+  </div>
+</div>
+<div class="bigline fade">No te quita tiempo. Te lo devuelve.</div>
+
+<div class="seclabel fade"><span>Cómo crece tu negocio</span></div>
+<div class="whatis fade">
+  <p>Todo negocio — el tuyo también — crece por <b>solo 5 palancas</b>. La mayoría empuja una y descuida las otras cuatro. PRACTIS trabaja las cinco contigo.</p>
+</div>
+<div class="pillars fade">
+  <div class="pillar"><div class="ic">1</div><div><h3>Más prospectos</h3><p>Que te llegue gente nueva sin depender de la suerte ni de rogar referidos.</p></div></div>
+  <div class="pillar"><div class="ic">2</div><div><h3>Mejor conversión</h3><p>Que más de los que llegan se queden — con un proceso, no con presión.</p></div></div>
+  <div class="pillar"><div class="ic">3</div><div><h3>Ticket más alto</h3><p>Cobrar lo que vales sin perder clientes: empaquetar, no abaratar.</p></div></div>
+  <div class="pillar"><div class="ic">4</div><div><h3>Más frecuencia</h3><p>Que el cliente regrese y se quede — no atenderlo una vez y que desaparezca.</p></div></div>
+  <div class="pillar"><div class="ic">5</div><div><h3>Mejor margen</h3><p>Que de cada peso que entra, te quede más a ti.</p></div></div>
+</div>
+<div class="whatis fade" style="margin-top:18px">
+  <p>Sube <b>solo 10% en cada una</b> y tu utilidad no sube 10% — sube <b>casi 60%</b>. Así se multiplica. Adentro calculamos exactamente cuánto es en tu negocio, y trabajamos las palancas que a ti te faltan — con más de <b>80 estrategias</b>.</p>
 </div>
 
-<div class="seclabel fade" style="animation-delay:.35s"><span>Aparta tu lugar</span></div>
-
-<form class="formcard fade" style="animation-delay:.4s" id="regform" name="registro-reto" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-<input type="hidden" name="form-name" value="registro-reto">
-<p style="display:none"><label>No llenar: <input name="bot-field"></label></p>
-
-<div class="field">
-<label for="nombre">Tu nombre</label>
-<input id="nombre" name="nombre" type="text" required autocomplete="name" placeholder="Nombre y apellido">
+<div class="seclabel fade"><span>¿Es para ti?</span></div>
+<div class="fit fade">
+  <div class="fitcard yes">
+    <div class="h">Sí, si…</div>
+    <ul>
+      <li>Eres médico, abogado, contador, psicólogo, arquitecto, consultor o dueño de una empresa de hasta 10 personas.</li>
+      <li>Facturas, pero el negocio no crece — o crece a costa de tu vida.</li>
+      <li>Ya no quieres cargar el negocio en la espalda, y estás listo para tomar decisiones.</li>
+    </ul>
+  </div>
+  <div class="fitcard no">
+    <div class="h">No, si…</div>
+    <ul>
+      <li>Buscas una receta mágica sin cambiar nada de cómo operas.</li>
+      <li>Quieres otro curso más para guardar y no ver.</li>
+      <li>Crees que tu único problema es que "faltan clientes".</li>
+    </ul>
+  </div>
 </div>
 
-<div class="field">
-<label for="whatsapp">WhatsApp</label>
-<input id="whatsapp" name="whatsapp" type="tel" required autocomplete="tel" inputmode="tel" placeholder="55 0000 0000">
-<div class="hint">Por aquí te llega el acceso a Zoom y el recordatorio.</div>
+<div class="seclabel fade"><span>Quién dirige el Círculo</span></div>
+<div class="host fade">
+  <img class="hostphoto" src="foto-ezequiel.jpg" alt="Ezequiel González Ruiz, fundador de PRACTIS" loading="lazy">
+  <div class="k">El fundador</div>
+  <p><b>Ezequiel González Ruiz</b> · Más de 20 años leyendo negocios desde la banca y la consultoría (UNAM · ITAM · Harvard). Salió de su propia jaula de oro; hoy ayuda a profesionistas y dueños a salir de la suya.</p>
+  <p class="said">"Leer un negocio y decir qué mover es, literalmente, lo que he hecho 20 años. Ahora lo pongo a tu alcance por el precio de una comida al mes."</p>
 </div>
 
-<div class="field">
-<label for="email">Correo</label>
-<input id="email" name="email" type="email" required autocomplete="email" placeholder="tu@correo.com">
+<div class="seclabel fade"><span>Lo que dicen adentro</span></div>
+<div class="testis fade">
+  <div class="tcard">
+    <span class="qm">“</span>
+    <p class="quote">Desde el primer momento encuentras soluciones a tus problemas de negocio y conectas con otros dueños. El Centro de Decisiones Empresariales me ayudó a identificar a mi cliente ideal y mis diferenciadores frente a la competencia. Hoy PRACTIS es mi arma para ir un paso adelante.</p>
+    <div class="who"><span class="name">Dr. Guillermo Rodríguez Anaya</span><span class="role">Médico geriatra</span></div>
+  </div>
+  <div class="tcard">
+    <span class="qm">“</span>
+    <p class="quote">Las preguntas de PRACTIS me hicieron revisar cuánto cobro y por qué no subía mis precios. Revisé toda mi cartera y descubrí qué clientes de verdad sostienen el despacho y cuáles solo me quitaban tiempo y energía. Me llevó a tomar decisiones que traía pendientes desde hacía años.</p>
+    <div class="who"><span class="name">Baldur Salazar</span><span class="role">Salazar y Asociados · Abogado</span></div>
+  </div>
+  <div class="tcard">
+    <span class="qm">“</span>
+    <p class="quote">Creía que tenía una estrategia comercial. El análisis de PRACTIS me mostró que estaba equivocado — y me ayudó a retomar el rumbo.</p>
+    <div class="who"><span class="name">Anuar Reyna</span><span class="role">Arova · Selección de personal</span></div>
+  </div>
 </div>
 
-<div class="field">
-<label for="reto">¿Cuál es el reto #1 de tu negocio hoy?</label>
-<textarea id="reto" name="reto" required placeholder="Escríbelo como se lo contarías a un asesor de confianza. Dos o tres líneas bastan."></textarea>
-<div class="hint">Los casos de la sesión se eligen de estas respuestas.</div>
+<div class="seclabel fade" id="entrar"><span>Entra hoy</span></div>
+<div class="offer fade">
+  <svg class="seal" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <circle cx="60" cy="60" r="57" stroke="#C9A84C" stroke-width="1.4"/>
+    <circle cx="60" cy="60" r="49" stroke="#C9A84C" stroke-width="0.7" opacity="0.55"/>
+    <defs><path id="sealpath" d="M60,60 m-40,0 a40,40 0 1,1 80,0 a40,40 0 1,1 -80,0"/></defs>
+    <text fill="#C9A84C" font-family="'JetBrains Mono',monospace" font-size="7.4" letter-spacing="1.3"><textPath href="#sealpath" startOffset="1%">· SATISFACCIÓN GARANTIZADA · O SE TE DEVUELVE </textPath></text>
+    <text x="60" y="54" text-anchor="middle" font-family="'Cinzel',serif" font-weight="700" font-size="30" fill="#E8C97A">14</text>
+    <text x="60" y="73" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="9" letter-spacing="3" fill="#C9A84C">DÍAS</text>
+    <line x1="41" y1="60" x2="49" y2="60" stroke="#C9A84C" stroke-width="0.8"/>
+    <line x1="71" y1="60" x2="79" y2="60" stroke="#C9A84C" stroke-width="0.8"/>
+  </svg>
+  <div class="price">$59 USD <span>/ mes</span></div>
+  <div class="terms">
+    <div class="term"><span class="c">✓</span><p><b>Garantía de 14 días.</b> Si no es para ti, se te devuelve — sin preguntas.</p></div>
+    <div class="term"><span class="c">✓</span><p><b>Precio congelado de por vida.</b> Cuando la membresía suba, tú conservas tu tarifa para siempre.</p></div>
+    <div class="term"><span class="c">✓</span><p>Cancela cuando quieras. Sin ataduras.</p></div>
+  </div>
+  <a href="diagnostico.html" class="btn">Empieza por tu radiografía gratis</a>
+  <a href="https://www.skool.com/practis-circulo" class="btn2" target="_blank" rel="noopener">o entra directo a PRACTIS Círculo →</a>
+  <div class="lock">Los fundadores conservan $59 para siempre</div>
 </div>
 
-<button class="btn" type="submit" id="submitbtn">Apartar mi lugar</button>
-<div class="errormsg" id="errormsg">No se pudo enviar. Revisa tu conexión e inténtalo de nuevo.</div>
-<p class="privacy">Tus datos solo se usan para darte acceso a la sesión. Nada de spam.</p>
-</form>
-
-<div class="success" id="success" role="status">
-<h3>Tu lugar está apartado</h3>
-<p><b style="color:var(--gold2)">Jueves 9 de julio · 7:00 PM (CDMX) · Zoom.</b></p>
-<p>En las próximas horas te llega la confirmación por WhatsApp y correo con el acceso. Agenda la hora desde ahora: los casos se resuelven en vivo y no se comparte la grabación completa.</p>
+<p class="closing fade">"Yo ya salí de una jaula… ahora me dedico a ayudar a otros a salir de la suya."</p>
+<div class="foot">PRACTIS · Tu negocio vive · Tú lo diriges</div>
 </div>
-
-<p class="closing fade">“Yo ya salí de una jaula… ahora me dedico a ayudar a otros a salir de la suya.”</p>
-<div class="foot">PRACTIS · No te quita tiempo, te lo devuelve</div>
-</div>
-
-<script>
-const form = document.getElementById('regform');
-const btn = document.getElementById('submitbtn');
-const err = document.getElementById('errormsg');
-form.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  err.classList.remove('show');
-  btn.disabled = true;
-  btn.textContent = 'Enviando…';
-  const data = new FormData(form);
-  try {
-    const res = await fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams(data).toString()
-    });
-    if (!res.ok) throw new Error('network');
-    form.style.display = 'none';
-    const ok = document.getElementById('success');
-    ok.classList.add('show');
-    ok.scrollIntoView({ behavior: 'smooth', block: 'center' });
-  } catch (_) {
-    err.classList.add('show');
-    btn.disabled = false;
-    btn.textContent = 'Apartar mi lugar';
-  }
-});
-</script>
 </body>
 </html>
