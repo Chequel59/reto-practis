@@ -39,9 +39,9 @@ No soy abogado; esto se basa en las políticas publicadas de Meta y TikTok y **d
 - VO: *"Eso hacemos en PRACTIS Círculo: una comunidad con un asesor de negocios por IA disponible 24/7, una sesión en vivo cada semana y un plan para tus próximos 90 días. Para dejar de dirigir a ciegas y en soledad."*
 - [Texto: *"PRACTIS IA 24/7 · Sesión semanal · Plan 90 días"*]
 
-**45–60 s · Oferta + CTA (garantía sí; promesa de dinero no)**
-- VO: *"Son 59 dólares al mes, con 14 días de garantía: si no es para ti, se te devuelve. Si quieres aprender a dirigir tu negocio y recuperar tu tiempo, el link está abajo."*
-- [Texto: *"$59/mes · Garantía 14 días · Link abajo"*]
+**45–60 s · Cierre + CTA (el anuncio manda a la landing, no vende el precio)**
+- VO: *"Si quieres conocer el cerebro de tu empresa y recuperar tu tiempo, haz clic en el enlace y mira cómo funciona."*
+- [Texto: *"Haz clic para ver cómo funciona →"*]
 
 ---
 
@@ -100,39 +100,43 @@ No soy abogado; esto se basa en las políticas publicadas de Meta y TikTok y **d
 
 ## PARTE 3 · Anuncios de texto (Facebook / Instagram / TikTok) — compliant
 
-> Cada uno: **Gancho** · **Texto** · **Titular** · **CTA**. Sustituye `[LINK]`. Prueba 2–3 a la vez.
+> Cada uno: **Gancho** · **Texto** · **Titular** · **CTA**. `[LINK]` = **tu landing** (nunca directo a Skool ni al diagnóstico). **Sin precio:** el trabajo del anuncio es el clic; el precio y la oferta viven en la landing. Prueba 2–3 a la vez.
 
-### Anuncio 1 · "¿Depende todo de ti?" *(emocional, empieza por este)*
-**Gancho:** ¿Sientes que tu negocio depende demasiado de ti?
-**Texto:** Muchos profesionistas son excelentes en su especialidad, pero nadie les enseñó a dirigir el negocio detrás. Así, el negocio termina viviendo sobre su espalda. La salida no es trabajar más horas: es tomar mejores decisiones y no hacerlo en soledad. PRACTIS Círculo es una comunidad con un asesor de negocios por IA 24/7, sesión en vivo cada semana y un plan a 90 días. Con 14 días de garantía.
+### Anuncio 1 · "El cerebro de tu empresa" ⭐ *(concepto central — empieza por este)*
+**Gancho:** ¿Y si tuvieras el cerebro de tu empresa acompañándote todo el día?
+**Texto:** Cuando tienes tu propio negocio, las dudas no llegan en horario de oficina: un precio, un cliente difícil, una decisión importante — y muchas veces no tienes a quién preguntarle. PRACTIS es el cerebro de tu empresa: un asesor de negocios por IA disponible 24/7, una sesión en vivo cada semana y una comunidad de profesionistas que te acompaña. Deja de dirigir a ciegas y en soledad.
+**Titular:** El cerebro de tu empresa, contigo todo el día.
+**CTA:** Haz clic y mira cómo funciona → [LINK]
+
+### Anuncio 2 · "¿Depende todo de ti?" *(emocional)*
+**Gancho:** ¿Sientes que tu empresa depende demasiado de ti?
+**Texto:** Muchos profesionistas son excelentes en su especialidad, pero nadie les enseñó a dirigir el negocio detrás — y termina viviendo sobre su espalda. La salida no es trabajar más horas: es tomar mejores decisiones, y no hacerlo en soledad. PRACTIS es el cerebro de tu empresa: asesor por IA 24/7, sesión en vivo semanal y una comunidad que te acompaña.
 **Titular:** Aprende a dirigir el negocio detrás de tu profesión.
-**CTA:** Más información → [LINK]
+**CTA:** Haz clic aquí → [LINK]
 
-### Anuncio 2 · "Las 5 palancas" *(educativo)*
-**Gancho:** Todo negocio crece por solo 5 palancas.
-**Texto:** Prospectos, conversión, precio, frecuencia y margen. La mayoría empuja una sola y descuida las otras cuatro. Trabajarlas de forma pareja suele rendir mucho más que matarte con una. En PRACTIS Círculo aprendes a mover las 5, con más de 80 estrategias, un asesor por IA 24/7 y una sesión en vivo cada semana. $59/mes, 14 días de garantía.
-**Titular:** 5 palancas para dirigir tu negocio con claridad.
-**CTA:** Ver cómo → [LINK]
+### Anuncio 3 · "Las 5 palancas" *(educativo)*
+**Gancho:** Todo negocio crece por solo 5 palancas. ¿Sabes cuáles son?
+**Texto:** Prospectos, conversión, precio, frecuencia y margen. La mayoría empuja una sola y descuida las otras cuatro. Trabajarlas parejo suele rendir mucho más que forzar una. PRACTIS —el cerebro de tu empresa— te ayuda a moverlas, con más de 80 estrategias, un asesor por IA 24/7 y una sesión en vivo cada semana.
+**Titular:** 5 palancas para dirigir tu empresa con claridad.
+**CTA:** Haz clic y descúbrelas → [LINK]
 
-### Anuncio 3 · "Sal de la jaula" *(aspiracional — sobre tiempo/libertad, no dinero)*
-**Gancho:** Montaste tu negocio para tener más libertad, ¿la tienes?
-**Texto:** Cuando eres el que abre, el que cierra y el que decide todo, el negocio deja de ser libertad. No es falta de esfuerzo: es falta de un sistema para dirigir y de gente que te acompañe. PRACTIS Círculo es tu cerebro empresarial: decisiones, liderazgo para delegar, procesos que no dependan de ti, y una comunidad de profesionistas. 14 días de garantía.
-**Titular:** Tu negocio no debería vivir sobre tu espalda.
-**CTA:** Conoce PRACTIS → [LINK]
-
-### Anuncio 4 · "PRACTIS IA" *(diferenciador — sin promesa de resultados)*
-**Gancho:** Un asesor de negocios con contexto fiscal mexicano, disponible 24/7.
-**Texto:** Los softwares agendan tus citas y mandan recordatorios. PRACTIS IA es distinto: le preguntas sobre precios, clientes, cobranza o decisiones de tu negocio, a cualquier hora, con contexto de México. Viene dentro de PRACTIS Círculo, con sesión en vivo semanal y una comunidad de profesionistas. $59/mes, 14 días de garantía.
+### Anuncio 4 · "PRACTIS IA" *(diferenciador)*
+**Gancho:** ¿Y si pudieras consultarle a un asesor de negocios a las 11 de la noche?
+**Texto:** Los softwares agendan tus citas y mandan recordatorios. PRACTIS IA es distinto: le preguntas sobre precios, clientes, cobranza o cualquier decisión de tu empresa, a cualquier hora, con contexto fiscal mexicano. Es el corazón de PRACTIS, el cerebro de tu empresa — con sesión en vivo semanal y una comunidad de profesionistas.
 **Titular:** Tu asesor de negocios de cabecera. 24/7.
-**CTA:** Conócelo → [LINK]
+**CTA:** Haz clic y conócelo → [LINK]
+
+### Anuncio 5 · "Sal de la jaula" *(aspiracional — tiempo/libertad, no dinero)*
+**Gancho:** Montaste tu empresa para tener más libertad, ¿la tienes?
+**Texto:** Cuando eres el que abre, el que cierra y el que decide todo, el negocio deja de ser libertad. No es falta de esfuerzo: es falta de un cerebro que te acompañe a dirigir. PRACTIS es eso — decisiones, liderazgo para delegar, procesos que no dependan de ti, y una comunidad de profesionistas.
+**Titular:** Tu empresa no debería vivir sobre tu espalda.
+**CTA:** Haz clic aquí → [LINK]
 
 ---
 
 ## PARTE 4 · Qué ajustar en la landing y el diagnóstico para cumplir
 
-- **Landing — titular actual** *"Eres el peor pagado de tu propio negocio"*: es un **atributo personal** (afirma su situación). Si mandas tráfico pagado ahí, conviene cambiarlo por una **pregunta** o **generalización**. Alternativas compliant:
-  - *"¿Tu negocio depende de ti para todo?"*
-  - *"Excelente en tu profesión. ¿Y en el negocio detrás?"*
+- **Landing — titular actual** *"El cerebro de tu empresa. Contigo todo el día."*: ya es compliant (no afirma tu situación ni promete dinero) ✅. Mantén la coherencia: el anuncio y la landing hablan del mismo concepto (el cerebro).
 - **Diagnóstico / calculadora** (proyecta utilidad y "veces que recuperas la membresía"): eso es una **estimación de ingresos**. Mantenlo como herramienta **dentro del sitio** (no en el anuncio) y **agrega un aviso visible**: *"Estimación educativa con tus propios números. No es una promesa de resultados."* Evita usar esas cifras en el copy de los anuncios.
 - **Regla de oro:** el anuncio vende *aprender a dirigir tu negocio, claridad, tiempo y comunidad*. El "dinero" que el prospecto calcule, que lo descubra **él mismo** dentro de tu herramienta — no lo prometas tú en la pauta.
 
@@ -152,9 +156,9 @@ No soy abogado; esto se basa en las políticas publicadas de Meta y TikTok y **d
 - VO: *"Aquí está lo que casi nadie hace: la mayoría se mata subiendo una sola. Pero como se multiplican entre sí, mejorar un poco las cinco de forma pareja suele tener un efecto mucho mayor que forzar una. El trabajo no es esfuerzo: son decisiones claras en cada palanca."*
 - [Dibuja flechas ↑ pequeñas en las 5 y una flecha grande de resultado]
 
-**60–75 s · Puente + CTA (sin promesa de dinero)**
-- VO: *"En PRACTIS Círculo trabajamos las cinco contigo —con más de 80 estrategias, un asesor por IA 24/7 y una sesión en vivo cada semana. Si quieres aprender a moverlas en tu negocio, el link está abajo. Con 14 días de garantía."*
-- [Texto: *"PRACTIS Círculo · $59/mes · Garantía 14 días"*]
+**60–75 s · Puente + CTA (manda a la landing)**
+- VO: *"En PRACTIS —el cerebro de tu empresa— trabajamos las cinco contigo, con más de 80 estrategias, un asesor por IA 24/7 y una sesión en vivo cada semana. Si quieres aprender a moverlas, haz clic en el enlace y mira cómo funciona."*
+- [Texto: *"Haz clic para ver cómo funciona →"*]
 
 ---
 
@@ -162,30 +166,37 @@ No soy abogado; esto se basa en las políticas publicadas de Meta y TikTok y **d
 
 > La primera línea es el 80% del resultado. Corre 2–3 ganchos por anuncio con el mismo texto y titular, y deja ganar al que tenga mejor CTR. Todos en versión pregunta/educativa (sin promesas de dinero ni atributos personales).
 
-**Anuncio 1 · ¿Depende todo de ti?**
-- A) ¿Sientes que tu negocio depende demasiado de ti?
+**Anuncio 1 · El cerebro de tu empresa**
+- A) ¿Y si tuvieras el cerebro de tu empresa acompañándote todo el día?
+- B) Imagina un asesor que piensa tu empresa contigo, a cualquier hora.
+- C) Tu empresa merece un cerebro que la dirija, no solo manos que la operen.
+
+**Anuncio 2 · ¿Depende todo de ti?**
+- A) ¿Sientes que tu empresa depende demasiado de ti?
 - B) ¿Qué pasaría con tu negocio si te tomaras dos semanas sin trabajar?
 - C) Eres excelente en tu profesión. ¿Y en el negocio detrás?
 
-**Anuncio 2 · Las 5 palancas**
+**Anuncio 3 · Las 5 palancas**
 - A) Todo negocio crece por solo 5 palancas. ¿Sabes cuáles son?
-- B) La mayoría empuja una sola palanca de su negocio. Existen cinco.
-- C) 5 números deciden si tu negocio crece. ¿Los conoces?
-
-**Anuncio 3 · Sal de la jaula**
-- A) Montaste tu negocio para tener más libertad, ¿la tienes?
-- B) Ser tu propio jefe no debería significar trabajar más que nunca.
-- C) ¿Tu negocio te da libertad… o te la quitó?
+- B) La mayoría empuja una sola palanca de su empresa. Existen cinco.
+- C) 5 números deciden si tu empresa crece. ¿Los conoces?
 
 **Anuncio 4 · PRACTIS IA**
-- A) Un asesor de negocios con contexto fiscal mexicano, disponible 24/7.
-- B) ¿Y si pudieras consultarle a un asesor de negocios a las 11 de la noche?
-- C) Tu software agenda las citas. ¿Quién te ayuda a decidir?
+- A) ¿Y si pudieras consultarle a un asesor de negocios a las 11 de la noche?
+- B) Tu software agenda las citas. ¿Quién te ayuda a decidir?
+- C) Un asesor de negocios con contexto fiscal mexicano, disponible 24/7.
+
+**Anuncio 5 · Sal de la jaula**
+- A) Montaste tu empresa para tener más libertad, ¿la tienes?
+- B) Ser tu propio jefe no debería significar trabajar más que nunca.
+- C) ¿Tu empresa te da libertad… o te la quitó?
 
 ---
 
 ## Notas de campaña
-- Empieza con los Anuncios 1 y 2; deja el 3 y 4 para retargeting.
-- Anuncio y landing deben prometer lo mismo (mismo gancho). *El titular de la landing ya se actualizó a la versión compliant "¿Y en el negocio detrás?".*
+- **El funnel:** Anuncio → (clic) **Landing** → **Diagnóstico** → Inscripción. Todos los `[LINK]` de los anuncios apuntan a **la landing**, nunca directo a Skool ni al diagnóstico.
+- **Sin precio en el anuncio.** Su trabajo es el clic, no la venta. El precio ($59), la garantía y el precio congelado viven en la landing.
+- Empieza con los Anuncios 1 (el cerebro) y 2 (¿depende de ti?); deja los demás para rotar y retargeting.
+- Anuncio y landing hablan del mismo concepto: **el cerebro de tu empresa**.
 - Nada de cifras de resultados de clientes hasta que las tengas (y con permiso).
 - Prueba de gancho: si una frase promete dinero o afirma la situación del prospecto, reescríbela como pregunta.
