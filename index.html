@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PRACTIS Círculo · Tu asesor de negocios de cabecera</title>
-<meta property="og:title" content="Eres excelente en tu profesión. ¿Y en el negocio detrás?">
-<meta property="og:description" content="El Centro de Decisiones para profesionistas independientes en México. PRACTIS IA 24/7, sesión en vivo cada semana y un círculo de pares. $59 USD/mes.">
+<title>PRACTIS · El cerebro de tu empresa</title>
+<meta property="og:title" content="El cerebro de tu empresa. Contigo todo el día.">
+<meta property="og:description" content="El cerebro que piensa tu empresa contigo: PRACTIS IA 24/7, sesión en vivo cada semana y una comunidad de profesionistas. $59 USD/mes.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,6 +57,14 @@ h1{font-family:'Cinzel',serif;font-weight:600;font-size:clamp(29px,6.6vw,44px);l
 .sistema{font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);opacity:.72;margin-top:1px}
 .hostphoto{width:106px;height:106px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);box-shadow:0 8px 26px rgba(0,0,0,.38);margin:0 auto 15px;display:block}
 .seal{width:118px;height:118px;margin:0 auto 4px;display:block}
+.videowrap{margin-top:30px}
+.videobox{position:relative;aspect-ratio:16/9;border-radius:16px;overflow:hidden;border:1px solid var(--gold-dim);box-shadow:0 18px 50px rgba(0,0,0,.32);background:linear-gradient(160deg,var(--green2),var(--green3))}
+.videobox video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.playbtn{position:absolute;inset:0;margin:auto;width:74px;height:74px;border-radius:50%;border:none;cursor:pointer;background:linear-gradient(180deg,var(--gold2),var(--gold));display:flex;align-items:center;justify-content:center;box-shadow:0 8px 30px rgba(0,0,0,.4);transition:transform .2s}
+.playbtn:hover{transform:scale(1.07)}
+.playbtn:focus-visible{outline:3px solid var(--gold2);outline-offset:3px}
+.videolabel{position:absolute;left:0;right:0;bottom:0;padding:16px;font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--cream);background:linear-gradient(0deg,rgba(10,32,24,.9),transparent);text-align:center;pointer-events:none}
+.videobox.playing .playbtn,.videobox.playing .videolabel{display:none}
 
 .seclabel{display:flex;align-items:center;gap:14px;margin:52px 0 20px}
 .seclabel span{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);white-space:nowrap}
@@ -142,14 +150,28 @@ h2{font-family:'Cinzel',serif;font-weight:600;font-size:clamp(21px,4.6vw,27px);l
 </header>
 
 <div class="fade" style="animation-delay:.08s">
-<div class="eyebrow">Círculo privado · Profesionistas independientes · México</div>
-<h1>Eres excelente en tu profesión. ¿Y en el negocio detrás?</h1>
-<div class="sub">Médico, abogado, contador, arquitecto, consultor… a casi nadie le enseñaron a dirigir el negocio detrás de su profesión. Por eso tantos terminan cargándolo en soledad. Aquí aprendes a dirigirlo — y a recuperar tu tiempo.</div>
+<div class="eyebrow">Para profesionistas y dueños de negocio · México</div>
+<h1>El cerebro de tu empresa. Contigo todo el día.</h1>
+<div class="sub">Eres excelente en tu profesión — pero dirigir el negocio no debería ser un peso que cargas solo. PRACTIS es el cerebro que piensa tu empresa contigo: decisiones claras, un asesor disponible 24/7 y una comunidad que te acompaña.</div>
 <div class="cta-wrap">
   <a href="diagnostico.html" class="btn">Haz tu radiografía gratis · 3 min</a>
   <div class="microcopy">Descubre cuánto puedes crecer — sin costo, sin registro</div>
   <a href="https://www.skool.com/practis-circulo" class="btn2" target="_blank" rel="noopener">¿Ya decidido? Entra directo a PRACTIS Círculo →</a>
 </div>
+</div>
+
+<div class="videowrap fade">
+  <div class="seclabel" style="margin:0 0 16px"><span>El cerebro de tu empresa · 90 seg</span></div>
+  <div class="videobox" id="videobox">
+    <video id="practisvideo" playsinline preload="none" poster="video-poster.jpg" controlslist="nodownload">
+      <source src="video-practis.mp4" type="video/mp4">
+      Tu navegador no reproduce este video.
+    </video>
+    <button class="playbtn" id="playbtn" type="button" aria-label="Reproducir video">
+      <svg width="26" height="30" viewBox="0 0 26 30" fill="#1a1206" xmlns="http://www.w3.org/2000/svg" style="margin-left:4px"><path d="M25 15 L0 30 L0 0 Z"/></svg>
+    </button>
+    <div class="videolabel">El cerebro de tu empresa, contigo todo el día</div>
+  </div>
 </div>
 
 <div class="seclabel fade"><span>¿Te suena?</span></div>
@@ -168,12 +190,12 @@ h2{font-family:'Cinzel',serif;font-weight:600;font-size:clamp(21px,4.6vw,27px);l
 
 <div class="seclabel fade"><span>Qué es PRACTIS Círculo</span></div>
 <div class="whatis fade">
-  <p><b>No es un curso. No es una comunidad de likes.</b> Es tu Centro de Decisiones — tu asesor de negocios de cabecera. Traes tus decisiones reales (precios, clientes, cobrar, delegar, crecer) y las trabajamos juntos.</p>
+  <p><b>No es un curso. No es una comunidad de likes.</b> Es el cerebro de tu empresa: tu centro de decisiones. Traes tus decisiones reales (precios, clientes, cobrar, delegar, crecer) y las trabajamos juntos — de día, de noche, cuando lo necesites.</p>
 </div>
 <div class="pillars fade">
   <div class="pillar">
     <div class="ic">IA</div>
-    <div><h3>PRACTIS IA · 24/7 <span class="star">Tu ventaja injusta</span></h3><p>Tu asesor de negocios disponible a cualquier hora, con <b>contexto fiscal mexicano real</b>. Pregúntale lo que le preguntarías a un consultor caro — sin esperar y sin tarifa por hora.</p></div>
+    <div><h3>PRACTIS IA · 24/7 <span class="star">El corazón del cerebro</span></h3><p>Tu asesor de negocios disponible a cualquier hora, con <b>contexto fiscal mexicano real</b>. Pregúntale lo que le preguntarías a un consultor caro — sin esperar y sin tarifa por hora.</p></div>
   </div>
   <div class="pillar">
     <div class="ic">✦</div>
@@ -278,5 +300,19 @@ h2{font-family:'Cinzel',serif;font-weight:600;font-size:clamp(21px,4.6vw,27px);l
 <p class="closing fade">"Yo ya salí de una jaula… ahora me dedico a ayudar a otros a salir de la suya."</p>
 <div class="foot">PRACTIS · Tu negocio vive · Tú lo diriges</div>
 </div>
+<script>
+(function(){
+  var box=document.getElementById('videobox'),
+      vid=document.getElementById('practisvideo'),
+      btn=document.getElementById('playbtn');
+  if(!box||!vid||!btn) return;
+  btn.addEventListener('click',function(){
+    box.classList.add('playing');
+    vid.controls=true;
+    vid.play();
+  });
+  vid.addEventListener('play',function(){ box.classList.add('playing'); });
+})();
+</script>
 </body>
 </html>
