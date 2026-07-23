@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PRACTIS · El reto de tu negocio</title>
+<meta property="og:title" content="Antes de venderte nada, déjame hacerte 7 preguntas.">
+<meta property="og:description" content="7 preguntas para pensar tu negocio con claridad. Así funciona PRACTIS: te hace las preguntas correctas para que decidas mejor.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#0D2B1F; --green2:#1A4030; --green3:#0a2018;
+  --gold:#C9A84C; --gold2:#E8C97A; --gold-dim:rgba(201,168,76,.32);
+  --cream:#FAFAF7; --muted:rgba(242,239,230,.60);
+  --serif:'Cinzel','Iowan Old Style','Palatino Linotype','Georgia',serif;
+  --accent:'Fraunces','Iowan Old Style','Georgia',serif;
+  --sans:'Instrument Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --mono:'JetBrains Mono','SF Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--sans);color:var(--cream);line-height:1.55;-webkit-font-smoothing:antialiased;
+  background:
+    radial-gradient(1100px 560px at 50% -10%, rgba(201,168,76,.10), transparent 60%),
+    radial-gradient(800px 460px at 90% 110%, rgba(26,64,48,.5), transparent 60%),
+    linear-gradient(160deg,var(--green3) 0%,var(--green) 45%,var(--green3) 100%);
+  background-attachment:fixed;min-height:100vh;display:flex;flex-direction:column}
+.wrap{max-width:600px;width:100%;margin:0 auto;padding:34px 22px 60px;flex:1;display:flex;flex-direction:column}
+.brand{text-align:center;margin-bottom:24px}
+.wordmark{font-family:var(--serif);font-weight:700;letter-spacing:.4em;font-size:18px;color:var(--gold2);padding-left:.4em}
+.tagline{font-family:var(--mono);font-size:9px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);opacity:.85;margin-top:7px}
+
+.stage{flex:1;display:flex;flex-direction:column;justify-content:center;min-height:60vh}
+.screen{animation:fade .5s cubic-bezier(.2,.7,.2,1) both}
+@keyframes fade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){.screen{animation:none}}
+
+.eyebrow{font-family:var(--mono);font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);text-align:center;margin-bottom:16px}
+h1{font-family:var(--serif);font-weight:600;font-size:clamp(25px,5.6vw,34px);line-height:1.16;text-align:center;text-wrap:balance}
+.sub{font-family:var(--accent);font-style:italic;font-size:clamp(15px,3.4vw,18px);color:var(--gold2);text-align:center;margin:16px auto 0;max-width:480px;font-weight:400}
+
+.progress{display:flex;align-items:center;gap:12px;margin-bottom:26px}
+.pnum{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);white-space:nowrap}
+.pbar{flex:1;height:3px;background:rgba(201,168,76,.18);border-radius:3px;overflow:hidden}
+.pfill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold2));border-radius:3px;transition:width .4s cubic-bezier(.2,.7,.2,1)}
+
+.q{font-family:var(--serif);font-weight:600;font-size:clamp(21px,4.6vw,28px);line-height:1.28;text-wrap:balance;margin-bottom:20px}
+textarea{width:100%;background:rgba(13,43,31,.5);border:1px solid rgba(201,168,76,.28);border-radius:12px;
+  color:var(--cream);font-family:var(--sans);font-size:16px;padding:15px 16px;outline:none;resize:vertical;min-height:96px;transition:border-color .2s,box-shadow .2s}
+textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,168,76,.14)}
+textarea::placeholder{color:rgba(242,239,230,.34)}
+.qhint{font-family:var(--accent);font-style:italic;font-size:13.5px;color:var(--muted);margin-top:10px}
+
+.nav{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:22px}
+.btn{font-family:var(--serif);font-weight:600;letter-spacing:.04em;font-size:16px;color:#1a1206;
+  background:linear-gradient(180deg,var(--gold2),var(--gold));border:none;border-radius:11px;padding:14px 28px;cursor:pointer;transition:transform .2s,box-shadow .3s;text-decoration:none;display:inline-block;text-align:center}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(201,168,76,.3)}
+.btn:focus-visible{outline:3px solid var(--gold2);outline-offset:2px}
+.back{background:none;border:none;color:var(--muted);font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;padding:8px 4px}
+.back:hover{color:var(--gold)}
+.back[hidden]{visibility:hidden}
+.start-wrap{text-align:center;margin-top:30px}
+.startbtn{padding:16px 40px;font-size:17px}
+.startnote{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:14px}
+
+.final .k{font-family:var(--mono);font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);text-align:center;margin-bottom:14px}
+.final h2{font-family:var(--serif);font-weight:600;font-size:clamp(21px,4.6vw,28px);line-height:1.24;text-align:center;text-wrap:balance}
+.final p{font-size:16px;color:rgba(250,250,247,.9);text-align:center;max-width:500px;margin:16px auto 0}
+.final p b{color:var(--gold2)}
+.reto{background:rgba(201,168,76,.08);border:1px solid var(--gold-dim);border-left:3px solid var(--gold);border-radius:12px;padding:16px 18px;margin:22px auto 0;max-width:500px}
+.reto .rl{font-family:var(--mono);font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.reto .rv{font-family:var(--accent);font-style:italic;font-size:16px;color:var(--cream)}
+.final .cta{text-align:center;margin-top:26px}
+.final .cta .btn{padding:16px 34px}
+.terms{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:14px}
+.secondary{display:block;margin-top:16px;color:var(--gold2);font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-decoration:none;border-bottom:1px solid var(--gold-dim);padding-bottom:2px;width:fit-content;margin-left:auto;margin-right:auto}
+.secondary:hover{color:var(--cream)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">
+    <div class="wordmark">PRACTIS</div>
+    <div class="tagline">Tu práctica vive · Tú la diriges</div>
+  </div>
+  <div class="stage" id="stage"></div>
+</div>
+
+<script>
+const SKOOL = "https://www.skool.com/practis-circulo";
+const Q = [
+  {q:"¿Qué es lo que HOY tiene atorado tu negocio?", h:"Ese problema que sabes que, si no lo resuelves, este año se te va igual que el pasado."},
+  {q:"Sé honesto: ¿cuánto te está costando ya?", h:"En dinero, en horas, en noches sin dormir. Ponle número."},
+  {q:"¿Qué ya intentaste… y por qué sigues en el mismo lugar?", h:"Los cursos, los consejos, el “échale más ganas”. ¿Movió la aguja?"},
+  {q:"Ahora imagínalo resuelto. ¿Qué cambia en tu negocio… y en tu vida?", h:""},
+  {q:"¿Qué significaría eso para ti de verdad?", h:"No para tu empresa — para ti, tu familia, el dueño que quieres llegar a ser."},
+  {q:"¿Qué tiene que pasar para que lo resuelvas de una vez?", h:"¿O vas a esperar otro año más?"},
+  {q:"Proyéctate 12 meses. Lo lograste. ¿Cómo se ve tu día?", h:"Cómo se siente llegar a tu negocio. Eso está más cerca de lo que crees."}
+];
+const answers = new Array(Q.length).fill("");
+let step = -1;
+const stage = document.getElementById('stage');
+
+function esc(s){return s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+
+function render(){
+  if(step === -1){
+    stage.innerHTML = `
+      <div class="screen">
+        <div class="eyebrow">2 minutos · para dueños de negocio y profesionistas</div>
+        <h1>Antes de venderte nada, déjame hacerte 7 preguntas.</h1>
+        <p class="sub">Las que un buen asesor te haría. Respóndelas con honestidad — son para ti, no se guardan en ningún lado. Al final vas a entender por qué existe PRACTIS.</p>
+        <div class="start-wrap">
+          <button class="btn startbtn" id="start">Empezar</button>
+          <div class="startnote">7 preguntas · sin registro</div>
+        </div>
+      </div>`;
+    document.getElementById('start').onclick = ()=>{ step=0; render(); };
+  } else if(step >= 0 && step < Q.length){
+    const item = Q[step];
+    stage.innerHTML = `
+      <div class="screen">
+        <div class="progress">
+          <span class="pnum">Pregunta ${step+1} de ${Q.length}</span>
+          <div class="pbar"><div class="pfill" style="width:${((step+1)/Q.length)*100}%"></div></div>
+        </div>
+        <div class="q">${item.q}</div>
+        <textarea id="ans" placeholder="Escríbelo para ti… (opcional)">${esc(answers[step])}</textarea>
+        ${item.h?`<div class="qhint">${item.h}</div>`:''}
+        <div class="nav">
+          <button class="back" id="back" ${step===0?'hidden':''}>← Atrás</button>
+          <button class="btn" id="next">${step===Q.length-1?'Ver la conclusión':'Siguiente'}</button>
+        </div>
+      </div>`;
+    const ta = document.getElementById('ans');
+    ta.focus();
+    ta.addEventListener('input', ()=>{ answers[step]=ta.value; });
+    document.getElementById('next').onclick = ()=>{ answers[step]=ta.value; step++; render(); };
+    const b = document.getElementById('back');
+    if(b) b.onclick = ()=>{ answers[step]=ta.value; step--; render(); };
+  } else {
+    const reto = answers[0].trim();
+    stage.innerHTML = `
+      <div class="screen final">
+        <div class="k">Lo que acabas de hacer</div>
+        <h2>Te detuviste a pensar tu negocio con las preguntas correctas.</h2>
+        <p>Casi ningún dueño lo hace. Vive tan metido en la operación que nunca se sienta a pensar el negocio — y por eso repite los mismos errores.</p>
+        ${reto?`<div class="reto"><div class="rl">Tu reto de hoy</div><div class="rv">“${esc(reto)}”</div></div>`:''}
+        <p style="margin-top:22px"><b>Eso es PRACTIS.</b> No es otra IA que te da respuestas rápidas. Es un <b>Centro de Decisiones</b>: te hace las preguntas correctas para que <b>tú</b> decidas mejor y construyas un <b>negocio con vida propia</b>. Contigo, no por ti.</p>
+        <div class="cta">
+          <a class="btn" href="${SKOOL}" target="_blank" rel="noopener">Quiero resolver mi reto con PRACTIS</a>
+          <div class="terms">$59 USD/mes · garantía 14 días · cancela cuando quieras</div>
+          <a class="secondary" id="restart" href="#">Volver a empezar</a>
+        </div>
+      </div>`;
+    const r = document.getElementById('restart');
+    if(r) r.onclick = (e)=>{ e.preventDefault(); step=-1; answers.fill(""); render(); };
+  }
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+render();
+</script>
+</body>
+</html>
